@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="300dp"
+
+    android:background="@drawable/custom_setting_layout"
+    android:gravity="center"
+    android:minHeight="300dp"
+    android:minWidth="240dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switchMute"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Sound On"
+        android:textColor="#393939" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Rate Us"
+        android:textColor="#393939"
+        android:layout_alignTop="@+id/imageViewStar"
+        android:layout_alignStart="@+id/switchMute" />
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/switchMute"
+        android:layout_below="@+id/switchMute"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/star1" />
+
+    <Button
+        android:id="@+id/buttonResett"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/switchMute"
+        android:layout_below="@+id/imageViewStar"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#90dc6e"
+        android:text="R" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/buttonResett"
+        android:gravity="center_vertical"
+        android:text="Reset Game"
+        android:textColor="#393939" />
+
+</RelativeLayout>

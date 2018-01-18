@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="400dp"
+
+    android:background="@drawable/custom_setting_layout"
+    android:gravity="center"
+    android:minHeight="420dp"
+    android:minWidth="320dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switchMute"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:text="Sound On"
+        android:textColor="#393939"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/switchMute"
+        android:layout_below="@+id/switchMute"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:text="Rate Us"
+        android:textColor="#393939"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/switchMute"
+        android:layout_alignTop="@+id/textView2"
+        app:srcCompat="@drawable/star1" />
+
+    <Button
+        android:id="@+id/buttonResett"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/imageViewStar"
+        android:layout_below="@+id/imageViewStar"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="40dp"
+        android:background="#90dc6e"
+        android:text="R"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/buttonResett"
+        android:gravity="center_vertical"
+        android:text="Reset Game"
+        android:textColor="#393939"
+        android:textSize="24sp" />
+
+</RelativeLayout>
